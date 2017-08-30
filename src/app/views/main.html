@@ -8,17 +8,24 @@
     <option value="50">50</option>
   </select>
   <br>
+  <a class="navbar-brand reg" href="#!/">all</a>
+  <a class="navbar-brand reg" href="#!/region/europe">Europe</a>
+  <a class="navbar-brand reg" href="#!/region/asia">Asia</a>
+  <a class="navbar-brand reg" href="#!/region/americas">Americas</a>
+  <a class="navbar-brand reg" href="#!/region/africa">Africa</a>
+  <a class="navbar-brand reg" href="#!/region/oceania">Oceania</a>
   <table border="1" id="ctable" class="table">
     <tr>
       <thead class="thead-default">
         <th>
-          <button ng-click="sortBy('name')" class="btn btn-light">Name</button>
+          <button ng-click="sortBy('name')" class="btn btn-light">Name <label class="sort" > click to sort &uarr; &darr;</label></button>
           <span class="sortorder" ng-show="propertyName === 'name'" ng-class="{reverse: reverse}"></span>
+          
         </th>
         <th>
-          <button ng-click="sortBy('capital')" class="btn btn-light">Capital</button>
+          <button ng-click="sortBy('capital')" class="btn btn-light">Capital <label class="sort" > click to sort &uarr; &darr;</label></button>
           <span class="sortorder" ng-show="propertyName === 'capital'" ng-class="{reverse: reverse}"></span>
-        </th>
+          </th>
         <th>
           Flag
         </th>

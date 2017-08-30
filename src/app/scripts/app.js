@@ -29,6 +29,11 @@ angular
         controller: 'CountryCtrl',
         controllerAs: 'country'
       })
+      .when('/region/:reg', {
+        templateUrl: 'views/main.html',
+        controller: 'RegionCtrl',
+        controllerAs: 'main'
+      })
       .otherwise({
         redirectTo: '/'
       });
