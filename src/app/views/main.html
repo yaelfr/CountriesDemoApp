@@ -9,25 +9,29 @@
   </select>
   <br>
   <table border="1" id="ctable" class="table">
-      <tr>
-        <thead class="thead-default">
-          <th>
-            <button ng-click="sortBy('name')" class="btn btn-light">Name</button>
-            <span class="sortorder" ng-show="propertyName === 'name'" ng-class="{reverse: reverse}"></span>
-          </th>
-          <th>
-            <button ng-click="sortBy('capital')" class="btn btn-light">Capital</button>
-            <span class="sortorder" ng-show="propertyName === 'capital'" ng-class="{reverse: reverse}"></span>
-          </th>
-          <th>
-           
-          </th>
-        </thead>
-        </tr>
+    <tr>
+      <thead class="thead-default">
+        <th>
+          <button ng-click="sortBy('name')" class="btn btn-light">Name</button>
+          <span class="sortorder" ng-show="propertyName === 'name'" ng-class="{reverse: reverse}"></span>
+        </th>
+        <th>
+          <button ng-click="sortBy('capital')" class="btn btn-light">Capital</button>
+          <span class="sortorder" ng-show="propertyName === 'capital'" ng-class="{reverse: reverse}"></span>
+        </th>
+        <th>
+          Flag
+        </th>
+        <th>
+          Comment
+        </th>
+      </thead>
+    </tr>
     <tr ng-repeat="c in countries|limitTo :limit | orderBy:propertyName:reverse">
       <td><a href="#!/country/{{c.name}}"> {{c.name}}</a></td>
       <td>{{c.capital}}</td>
       <td><img class="image" src={{c.flag}} alt="!!!" /></td>
+      <td> <a class="comment" href="#!/country/{{c.name}}" ng-show="checkComm(c.name)">see comment</a></td>
     </tr>
   </table>
 </div>

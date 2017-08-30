@@ -4,64 +4,79 @@
   color: #000;
   padding: 0.2em 0;
 }
-td{
+
+td {
   font-size: 20px;
 }
-.btn-light{
-  background-color:#F3F5E3;
+
+.big-flag {
+  border: solid lightgray 1px;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.btn-light {
+  background-color: #F3F5E3;
   display: block;
   width: 100%;
-
 }
-#ctable{
+
+#ctable {
   background-color: #F3F5E3;
-  width:800px;
+  width: 800px;
   position: relative;
   left: 27px;
 }
-th{
-  
-}
-.flag{
+
+.flag {
   width: 200px;
   height: 200px;
-  object-fit:contain;
+  object-fit: contain;
 }
+
 body {
   padding: 0;
 }
-.image{
+
+.image {
   width: 50px;
-  height:50px;
-  object-fit:contain;
+  height: 50px;
+  object-fit: contain;
 }
+
 label.custom-select {
   position: relative;
   display: inline-block;
 }
 
-h1{
+h1 {
   display: flex;
 }
-  .custom-select {
-      display: flex;
-      border: 2px solid #bbb;
-      padding: 4px 3px 3px 5px;
-      margin: 0;
-      font: inherit;
-      outline:none; /* remove focus ring from Webkit */
-      line-height: 1.2;
-      background: #f8f8f8;
-      
-      -webkit-appearance:none; /* remove the strong OSX influence from Webkit */
-      border-radius: 6px;
-  }
-  #comment{
-    color: #198729;
-    font-size: 17px;
-  }
+
+.custom-select {
+  display: flex;
+  border: 2px solid #bbb;
+  padding: 4px 3px 3px 5px;
+  margin: 0;
+  font: inherit;
+  outline: none;
+  /* remove focus ring from Webkit */
+  line-height: 1.2;
+  background: #f8f8f8;
+  -webkit-appearance: none;
+  /* remove the strong OSX influence from Webkit */
+  border-radius: 6px;
+}
+
+#comment {
+  color: #198729;
+  font-size: 17px;
+}
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
+
 .header,
 .marketing,
 .footer {
@@ -69,12 +84,17 @@ h1{
   padding-right: 15px;
 }
 
+
 /* Custom page header */
+
 .header {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
 }
+
+
 /* Make the masthead heading the same height as the navigation */
+
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -82,41 +102,50 @@ h1{
   padding-bottom: 19px;
 }
 
+
 /* Custom page footer */
+
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
 
-.container-narrow > hr {
+.container-narrow>hr {
   margin: 30px 0;
 }
 
+
 /* Main marketing message and sign up button */
+
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
+
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
 }
 
+
 /* Supporting marketing content */
+
 .marketing {
   margin: 40px 0;
 }
-.marketing p + h4 {
+
+.marketing p+h4 {
   margin-top: 28px;
 }
 
+
 /* Responsive: Portrait tablets and up */
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 730px;
   }
-
   /* Remove the padding we set earlier */
   .header,
   .marketing,
@@ -131,12 +160,12 @@ h1{
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
-    background-color:#FDF7E0;
+    background-color: #FDF7E0;
     width: 1000px;
     position: relative;
     left: -160px;
   }
-  footer{
+  footer {
     position: relative;
   }
 }
