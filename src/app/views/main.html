@@ -1,0 +1,23 @@
+<div class="jumbotron">
+  <h1> countries </h1>
+  <table border="1">
+      <tr>
+          <th>
+            <button ng-click="sortBy('name')">Name</button>
+            <span class="sortorder" ng-show="propertyName === 'name'" ng-class="{reverse: reverse}"></span>
+          </th>
+          <th>
+            <button ng-click="sortBy('capital')">Capital</button>
+            <span class="sortorder" ng-show="propertyName === 'capital'" ng-class="{reverse: reverse}"></span>
+          </th>
+          <th>
+           
+          </th>
+        </tr>
+    <tr ng-repeat="c in countries | orderBy:propertyName:reverse">
+      <td><a href="#!/country/{{c.name}}"> {{c.name}}</a></td>
+      <td>{{c.capital}}</td>
+      <td><img class="image" src={{c.flag}} alt="!!!" /></td>
+    </tr>
+  </table>
+</div>
