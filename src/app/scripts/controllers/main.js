@@ -9,7 +9,7 @@
  */
 angular.module('countriesApp')
   .controller('MainCtrl', function ($scope,$http) {
-  $http.get("https://restcountries.eu/rest/v2/region/europe").then(function(response){
+  $http.get("https://restcountries.eu/rest/v2/all").then(function(response){
     $scope.countries=response.data;
     
   })

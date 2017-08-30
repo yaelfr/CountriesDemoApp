@@ -1,20 +1,30 @@
 <div class="jumbotron">
-  <h1> countries </h1>
-  <table border="1">
+  <h1>countries</h1>
+  <select class="custom-select" ng-model="limit">
+    <option value="">select number of items to show</option>
+    <option value="20">20</option>
+    <option value="30">30</option>
+    <option value="40">40</option>
+    <option value="50">50</option>
+  </select>
+  <br>
+  <table border="1" id="ctable" class="table">
       <tr>
+        <thead class="thead-default">
           <th>
-            <button ng-click="sortBy('name')">Name</button>
+            <button ng-click="sortBy('name')" class="btn btn-light">Name</button>
             <span class="sortorder" ng-show="propertyName === 'name'" ng-class="{reverse: reverse}"></span>
           </th>
           <th>
-            <button ng-click="sortBy('capital')">Capital</button>
+            <button ng-click="sortBy('capital')" class="btn btn-light">Capital</button>
             <span class="sortorder" ng-show="propertyName === 'capital'" ng-class="{reverse: reverse}"></span>
           </th>
           <th>
            
           </th>
+        </thead>
         </tr>
-    <tr ng-repeat="c in countries | orderBy:propertyName:reverse">
+    <tr ng-repeat="c in countries|limitTo :limit | orderBy:propertyName:reverse">
       <td><a href="#!/country/{{c.name}}"> {{c.name}}</a></td>
       <td>{{c.capital}}</td>
       <td><img class="image" src={{c.flag}} alt="!!!" /></td>

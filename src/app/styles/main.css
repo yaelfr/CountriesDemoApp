@@ -4,6 +4,24 @@
   color: #000;
   padding: 0.2em 0;
 }
+td{
+  font-size: 20px;
+}
+.btn-light{
+  background-color:#F3F5E3;
+  display: block;
+  width: 100%;
+
+}
+#ctable{
+  background-color: #F3F5E3;
+  width:800px;
+  position: relative;
+  left: 27px;
+}
+th{
+  
+}
 .flag{
   width: 200px;
   height: 200px;
@@ -14,9 +32,37 @@ body {
 }
 .image{
   width: 50px;
-  height: 50px;
+  height:50px;
   object-fit:contain;
 }
+label.custom-select {
+  position: relative;
+  display: inline-block;
+}
+
+h1{
+  display: flex;
+}
+  .custom-select {
+      display: flex;
+      border: 2px solid #bbb;
+      padding: 4px 3px 3px 5px;
+      margin: 0;
+      font: inherit;
+      outline:none; /* remove focus ring from Webkit */
+      line-height: 1.2;
+      background: #f8f8f8;
+      
+      -webkit-appearance:none; /* remove the strong OSX influence from Webkit */
+      
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+  }
+  #comment{
+    color: #198729;
+    font-size: 17px;
+  }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -88,5 +134,12 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+    background-color:#FDF7E0;
+    width: 1000px;
+    position: relative;
+    left: -160px;
+  }
+  footer{
+    position: relative;
   }
 }
