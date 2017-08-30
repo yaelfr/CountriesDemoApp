@@ -1,5 +1,8 @@
 # countries
 
+This a demo project how to consume and show countris data 
+from  [Rest Countries](https://restcountries.eu/)
+
 This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.16.0.
 
